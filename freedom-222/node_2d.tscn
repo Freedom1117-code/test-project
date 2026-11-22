@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b1lqmblcsja3q"]
+
+[ext_resource type="Shader" uid="uid://d2q3mkyoc6pnk" path="res://perspective.gdshader" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://cvitw0g413kgi" path="res://control.gd" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://dpv13ivckgo1i" path="res://屏幕截图 2026-10-17 222910.png" id="2_epypp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ooee"]
+shader = ExtResource("1_0e48y")
+shader_parameter/fov = 1.0
+shader_parameter/cull_back = true
+shader_parameter/y_rot = -5.399991706500003
+shader_parameter/x_rot = 0.0
+shader_parameter/inset = 0.0
+
+[node name="Node2D" type="Node2D" unique_id=1167843574]
+
+[node name="Control" type="Control" parent="." unique_id=686725585]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -70.0
+offset_top = 38.0
+offset_right = -30.0
+offset_bottom = 78.0
+scale = Vector2(1649.83, 172.55702)
+script = ExtResource("1_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Control" unique_id=1496272356]
+
+[node name="屏幕截图20261017222910" type="Sprite2D" parent="Control" unique_id=892230331]
+material = SubResource("ShaderMaterial_8ooee")
+position = Vector2(0.4048902, 2.474544)
+scale = Vector2(0.00060612307, 0.0057951855)
+texture = ExtResource("2_epypp")
+
+[node name="TextureButton" type="TextureButton" parent="Control" unique_id=1066923283]
+layout_mode = 0
+offset_left = 4.896262
+offset_top = 0.30134958
+offset_right = 44.62896
+offset_bottom = 39.066975
+scale = Vector2(-777.67816, 10.644014)

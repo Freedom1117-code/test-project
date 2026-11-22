@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfiolv5e8bkme"]
+
+[ext_resource type="Script" path="res://StyleBoxCustom/style_box_custom.gd" id="1_dkk1f"]
+
+[sub_resource type="Curve2D" id="Curve2D_wtkdn"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 148.069, 10.5944, 0, 0, 0, 0, 154.908, 13.2248, 0, 0, 0, 0, 160.786, 17.5989, 0, 0, 0, 0, 163.714, 20.9948, 0, 0, 0, 0, 191.435, 59.1492, 0, 0, 0, 0, 194.896, 65.6069, 0, 0, 0, 0, 196.492, 72.758, 0, 0, 0, 0, 196.103, 80.0747, 0, 0, 0, 0, 193.76, 87.0167, 0, 0, 0, 0, 191.435, 90.8508, 0, 0, 0, 0, 163.714, 129.005, 0, 0, 0, 0, 158.642, 134.293, 0, 0, 0, 0, 152.334, 138.02, 0, 0, 0, 0, 145.255, 139.912, 0, 0, 0, 0, 137.929, 139.828, 0, 0, 0, 0, 133.564, 138.802, 0, 0, 0, 0, 88.7106, 124.228, 0, 0, 0, 0, 82.1145, 121.038, 0, 0, 0, 0, 76.6205, 116.19, 0, 0, 0, 0, 72.6341, 110.043, 0, 0, 0, 0, 70.4497, 103.049, 0, 0, 0, 0, 70.0769, 98.5807, 0, 0, 0, 0, 70.0769, 51.4193, 0, 0, 0, 0, 71.0723, 44.1602, 0, 0, 0, 0, 73.9849, 37.4371, 0, 0, 0, 0, 78.5997, 31.7461, 0, 0, 0, 0, 84.5761, 27.5075, 0, 0, 0, 0, 88.7106, 25.7721, 0, 0, 0, 0, 133.564, 11.1984, 0, 0, 0, 0, 140.775, 9.90191)
+}
+point_count = 30
+
+[sub_resource type="StyleBox" id="StyleBox_bu67u"]
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+script = ExtResource("1_dkk1f")
+edge = 5
+color = Color(1, 0.319434, 0.304512, 1)
+radius = 73.451
+rotate = 0.0
+curve = SubResource("Curve2D_wtkdn")
+delta = 26.967
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 369.0
+offset_bottom = 332.0
+theme_override_styles/panel = SubResource("StyleBox_bu67u")
